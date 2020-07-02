@@ -1,8 +1,8 @@
 <template>
   <div id="home" :class="weather.main?weather.main.toLowerCase():null" class="time-show">
     <div class="overlay-header">
-      <div>
-        <h1>{{ forecast.name }} <img class="weather-icon" :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`" width="40px" height="40px"> </h1>
+      <div class="d-flex align-center direction-col">
+        <h1>{{ cityName }} <img class="weather-icon" :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`" width="40px" height="40px"> </h1>
         <span>{{currentTime}}</span>
       </div>
     </div>
@@ -35,7 +35,9 @@ export default {
   },
   computed:{
     ...mapGetters(['forecast', 'city_id', 'weather']),
-    
+    cityName: function(){
+      return this.forecast.name + (this.forecast? ', ' + this.forecast.sys.country : null)
+    }
   },
   created(){
     this.fetchForecast();
@@ -65,6 +67,10 @@ export default {
 
 .rain{
   background-image: url('/images/rainy-sky.jpg');
+}
+
+.thunderstorm{
+  background-image: url('/images/thunderstorm.jpg');
 }
 
 </style>
