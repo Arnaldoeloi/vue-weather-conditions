@@ -1,9 +1,12 @@
 <template>
   <div id="home" :class="weather.main?weather.main.toLowerCase():null" class="time-show">
-    <div class="overlay-header">
+    <div class="overlay-header direction-row align-center justify-center">
       <div class="d-flex align-center direction-col">
-        <h1>{{ cityName }} <img class="weather-icon" :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`" width="40px" height="40px"> </h1>
+        <h1>{{ cityName }}</h1>
         <span>{{currentTime}}</span>
+      </div>
+      <div>
+        <img class="weather-icon" :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`" width="100px" height="100px"> 
       </div>
     </div>
     <div class="content">
