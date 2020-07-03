@@ -52,8 +52,24 @@ body{
     height: 100vh;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 1.2em;
+    color: #fff;
+    margin:0;
     /* text-align: center; */
 }
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+#home{
+    height: 100%;
+    width: 100%;
+}
+
 .overlay-header{
     display: flex;
     justify-content: center;
@@ -70,7 +86,7 @@ body{
 }
 
 .overlay-header h1{
-    font-size: 2em;
+    font-size: 1.3em;
     padding: 0;
     margin-bottom: 10px;
 }
@@ -80,6 +96,40 @@ body{
 }
 
 .blur{
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    /* padding: 0px 150px; */
+}
+
+.quote-container{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+
+    /* background: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%,  rgba(0,0,0,0) 90%); */
+}
+
+.weather-icon{
+    display: inline;
+  
+  }
+
+@media screen and (max-width: 600px) {
+    .weather-icon img{
+        display: none;
+    }
+
+    .quote-container{
+        font-size: 0.8rem;
+    }
 }

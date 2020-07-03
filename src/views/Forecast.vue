@@ -1,19 +1,27 @@
 <template>
   <div id="home" :class="weather.main?weather.main.toLowerCase():null" class="time-show">
-    <div class="overlay-header direction-row align-center justify-center">
-      <div class="d-flex align-center direction-col">
-        <h1>{{ cityName }}</h1>
-        <span>{{currentTime}}</span>
+    <div class="wrapper blur">
+      <div class="overlay-header direction-row align-center justify-center">
+        <div class="d-flex align-center direction-col">
+          <h1>{{ cityName }}</h1>
+          <span>{{currentTime}}</span>
+        </div>
+        <div class="weather-icon">
+          <img  :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`"> 
+        </div>
       </div>
-      <div>
-        <img class="weather-icon" :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`" width="100px" height="100px"> 
+      <div class="content">
+        <div class="quote-container">
+            <h1 class="quote">
+              <i class="fa fa-quote-right" aria-hidden="true"></i>
+              {{quote.content}}  
+            </h1>
+            <span class="author">— {{quote.author}}</span>
+        </div>  
+        <!-- <div class="blur">
+          {{ weather.main }}
+        </div> -->
       </div>
-    </div>
-    <div class="content">
-      
-    </div>
-    <div class="blur">
-      {{ weather.main }}
     </div>
   </div>
 </template>
@@ -31,41 +39,35 @@ export default {
   components: {
   },
   methods: {
-    ...mapActions(['fetchForecast']),
+    ...mapActions(['fetchForecast','fetchQuote']),
     changeTime: function(){
       this.currentTime = moment().format('LTS');
     } 
   },
   computed:{
-    ...mapGetters(['forecast', 'city_id', 'weather']),
+    ...mapGetters(['forecast', 'city_id', 'weather', 'quote']),
     cityName: function(){
-      return this.forecast.name + (this.forecast? ', ' + this.forecast.sys.country : null)
+      return this.forecast.name + (this.forecast? ', ' + this.forecast?.sys?.country : null)
     }
   },
   created(){
     this.fetchForecast();
+    this.fetchQuote();
     window.setInterval(this.changeTime, 1000);
   },
 }
 </script>
 <style scoped>
-.weather-icon{
-  display: inline;
-}
-#home{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
 .time-show{
   background-size: cover;
 }
 
 .clear{
   background-image: url('/images/clear-sky-02.jpg');
+}
+
+.clouds{
+  background-image: url('/images/cloudy.jpg');
 }
 
 .rain{
