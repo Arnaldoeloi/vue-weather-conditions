@@ -76,23 +76,23 @@ footer{
 
 .time-show{
   background-size: cover;
-  background-image: url('/images/default.jpg');
+  background-image: url('images/default.jpg');
 }
 
 .drizzle{
-  background-image: url('/images/drizzle.jpg');
+  background-image: url('images/drizzle.jpg');
 }
 
 .snow{
-  background-image: url('/images/snow.jpg');
+  background-image: url('images/snow.jpg');
 }
 
 .mist{
-  background-image: url('/images/mist.jpg');
+  background-image: url('images/mist.jpg');
 }
 
 .smoke{
-  background-image: url('/images/smoke.jpg');
+  background-image: url('images/smoke.jpg');
 }
 
 .haze{
@@ -100,43 +100,43 @@ footer{
 }
 
 .dust{
-  background-image: url('/images/dust.jpg');
+  background-image: url('images/dust.jpg');
 }
 
 .fog{
-  background-image: url('/images/fog.jpg');
+  background-image: url('images/fog.jpg');
 }
 
 .sand{
-  background-image: url('/images/sand.jpg');
+  background-image: url('images/sand.jpg');
 }
 
 .ash{
-  background-image: url('/images/ash.jpg');
+  background-image: url('images/ash.jpg');
 }
 
 .squall{
-  background-image: url('/images/squall.jpg');
+  background-image: url('images/squall.jpg');
 }
 
 .tornado{
-  background-image: url('/images/tornado.jpg');
+  background-image: url('images/tornado.jpg');
 }
 
 .clear{
-  background-image: url('/images/clear-sky-02.jpg');
+  background-image: url('images/clear-sky-02.jpg');
 }
 
 .clouds{
-  background-image: url('/images/cloudy.jpg');
+  background-image: url('images/cloudy.jpg');
 }
 
 .rain{
-  background-image: url('/images/rainy-sky.jpg');
+  background-image: url('images/rainy-sky.jpg');
 }
 
 .thunderstorm{
-  background-image: url('/images/thunderstorm.jpg');
+  background-image: url('images/thunderstorm.jpg');
 }
 
 </style>
