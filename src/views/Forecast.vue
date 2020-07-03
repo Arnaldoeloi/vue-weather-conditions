@@ -10,17 +10,21 @@
           <img  :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`"> 
         </div>
       </div>
-      <div class="content">
+      <div class="content justify-center align-center flex-column">
         <div class="quote-container">
             <h1 class="quote">
               <i class="fa fa-quote-right" aria-hidden="true"></i>
               {{quote.content}}  
             </h1>
-            <span class="author">— {{quote.author}}</span>
+            <p class="text-align-center">
+              <span class="author">— {{quote.author}}</span>
+            </p>
         </div>  
-        <!-- <div class="blur">
+      </div>
+      <div class="content">
+        <div>
           {{ weather.main }}
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -60,6 +64,7 @@ export default {
 <style scoped>
 .time-show{
   background-size: cover;
+  background-image: url('/images/default.jpg');
 }
 
 .clear{

@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
 }
@@ -63,8 +66,10 @@ body{
     flex-direction: column;
     align-content: center;
     align-items: center;
+    justify-content: space-between;
     background: rgba(0, 0, 0, 0.3);
 }
+
 #home{
     height: 100%;
     width: 100%;
@@ -82,13 +87,13 @@ body{
     right: 0;
     bottom: 0;
     color: #fff;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%,  rgba(0,0,0,0) 90%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%,  rgba(0,0,0,0) 100%);
 }
 
 .overlay-header h1{
     font-size: 1.3em;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 .overlay-header span{
     padding-bottom: 10px;
@@ -103,7 +108,7 @@ body{
 .content{
     width: 100%;
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -115,14 +120,25 @@ body{
     text-align: center;
     font-size: 1.2rem;
     width: 80%;
-
+    padding-bottom: 100px;
     /* background: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%,  rgba(0,0,0,0) 90%); */
+}
+
+.text-align-right{
+    text-align: right;   
+}
+
+.text-align-left{
+    text-align: left;   
+}
+
+.text-align-center{
+    text-align: center;   
 }
 
 .weather-icon{
     display: inline;
-  
-  }
+}
 
 @media screen and (max-width: 600px) {
     .weather-icon img{

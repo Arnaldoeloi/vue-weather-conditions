@@ -17,11 +17,16 @@ const getters ={
 
 const actions = {
     async fetchForecast({commit}){
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?id=${state.city_id}&appid=${process.env.VUE_APP_OPEN_WEATHER_API_KEY}`);
+        const response = await axios.get(
+            `https://api.openweathermap.org/data/2.5/weather?id=${state.city_id}&appid=${process.env.VUE_APP_OPEN_WEATHER_API_KEY}`);
         commit('setForecast', response.data);
     },
     async fetchQuote({commit}){
-        const response = await axios.get(`https://api.quotable.io/random`);
+        const response = await axios.get(`https://api.quotable.io/random`, {
+            params: {
+                tags: 'famous-quotes',
+            }
+        });
         commit('setQuote', response.data);
     }
 }
