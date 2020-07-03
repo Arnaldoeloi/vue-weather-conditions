@@ -69,6 +69,50 @@ export default {
   background-image: url('/images/default.jpg');
 }
 
+.drizzle{
+  background-image: url('/images/drizzle.jpg');
+}
+
+.snow{
+  background-image: url('/images/snow.jpg');
+}
+
+.mist{
+  background-image: url('/images/mist.jpg');
+}
+
+.smoke{
+  background-image: url('/images/smoke.jpg');
+}
+
+.haze{
+
+}
+
+.dust{
+  background-image: url('/images/dust.jpg');
+}
+
+.fog{
+  background-image: url('/images/fog.jpg');
+}
+
+.sand{
+  background-image: url('/images/sand.jpg');
+}
+
+.ash{
+  background-image: url('/images/ash.jpg');
+}
+
+.squall{
+  background-image: url('/images/squall.jpg');
+}
+
+.tornado{
+  background-image: url('/images/tornado.jpg');
+}
+
 .clear{
   background-image: url('/images/clear-sky-02.jpg');
 }

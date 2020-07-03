@@ -7,7 +7,7 @@ const state ={
     quote: 0,
     timezone: '',
     currentUserPosition: null,
-    city_id: '4499428',
+    city_id: '1486209',
 }
 
 const getters ={
