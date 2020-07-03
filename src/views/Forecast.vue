@@ -74,4 +74,69 @@ footer{
   padding: 10px 50px;
 }
 
+.time-show{
+    background-size: cover;
+    background-image: url('~@/assets/images/default.jpg');
+}
+  
+.drizzle{
+    background-image: url('~@/assets/images/drizzle.jpg');
+}
+
+.snow{
+    background-image: url('~@/assets/images/snow.jpg');
+}
+
+.mist{
+    background-image: url('~@/assets/images/mist.jpg');
+}
+
+.smoke{
+    background-image: url('~@/assets/images/smoke.jpg');
+}
+
+.haze{
+    background-image: url('~@/assets/images/dust.jpg');
+}
+
+.dust{
+    background-image: url('~@/assets/images/dust.jpg');
+}
+
+.fog{
+    background-image: url('~@/assets/images/fog.jpg');
+}
+
+.sand{
+    background-image: url('~@/assets/images/sand.jpg');
+}
+
+.ash{
+    background-image: url('~@/assets/images/ash.jpg');
+}
+
+.squall{
+    background-image: url('~@/assets/images/squall.jpg');
+}
+
+.tornado{
+    background-image: url('~@/assets/images/tornado.jpg');
+}
+
+.clear{
+    background-image: url('~@/assets/images/clear-sky-02.jpg');
+}
+
+.clouds{
+    background-image: url('~@/assets/images/cloudy.jpg');
+}
+
+.rain{
+    background-image: url('~@/assets/images/rainy-sky.jpg');
+}
+
+.thunderstorm{
+    background-image: url('~@/assets/images/thunderstorm.jpg');
+}
+
 </style>
