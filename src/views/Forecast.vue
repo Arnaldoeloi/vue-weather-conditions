@@ -71,7 +71,7 @@ export default {
 </script>
 <style scoped>
 footer{
-  padding: 10px 50px;
+  padding: 0px 50px;
 }
 
 .time-show{

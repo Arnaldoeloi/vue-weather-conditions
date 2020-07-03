@@ -88,6 +88,7 @@ body{
 #home{
     height: 100%;
     width: 100%;
+    overflow-y: hidden;
 }
 
 .overlay-header{
@@ -125,7 +126,7 @@ body{
     text-align: center;
     font-size: 1.0rem;
     width: 80%;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     /* background: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%,  rgba(0,0,0,0) 90%); */
 }
 
@@ -152,77 +153,25 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+    #home{
+        font-size: 1rem;
+    }
     .weather-icon img{
         display: none;
     }
 
     .quote-container{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
+
+    .overlay-header h1{
+        font-size: 1em;
+    }
+
+    .overlay-header span{
+        font-size: 0.7em;
+    }
+
+    
 }
 
-
-.time-show{
-    background-size: cover;
-    background-image: url('/images/default.jpg');
-}
-  
-.drizzle{
-    background-image: url('/images/drizzle.jpg');
-}
-
-.snow{
-    background-image: url('/images/snow.jpg');
-}
-
-.mist{
-    background-image: url('/images/mist.jpg');
-}
-
-.smoke{
-    background-image: url('/images/smoke.jpg');
-}
-
-.haze{
-    background-image: url('/images/dust.jpg');
-}
-
-.dust{
-    background-image: url('/images/dust.jpg');
-}
-
-.fog{
-    background-image: url('/images/fog.jpg');
-}
-
-.sand{
-    background-image: url('/images/sand.jpg');
-}
-
-.ash{
-    background-image: url('/images/ash.jpg');
-}
-
-.squall{
-    background-image: url('/images/squall.jpg');
-}
-
-.tornado{
-    background-image: url('/images/tornado.jpg');
-}
-
-.clear{
-    background-image: url('/images/clear-sky-02.jpg');
-}
-
-.clouds{
-    background-image: url('/images/cloudy.jpg');
-}
-
-.rain{
-    background-image: url('/images/rainy-sky.jpg');
-}
-
-.thunderstorm{
-    background-image: url('/images/thunderstorm.jpg');
-}
