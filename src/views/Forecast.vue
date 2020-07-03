@@ -58,7 +58,7 @@ export default {
       return this.forecast.name + (this.forecast? ', ' + this.forecast?.sys?.country : null)
     },
     temperatureCelsius: function(){
-      return this.forecast?.main?.temp - 273.15;
+      return (this.forecast?.main?.temp - 273.15).toFixed(2);
     }
   },
   created(){
