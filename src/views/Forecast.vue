@@ -43,19 +43,20 @@ export default {
   components: {
   },
   methods: {
-    ...mapActions(['fetchForecast','fetchQuote']),
+    ...mapActions(['fetchForecast','fetchQuote', 'askForCurrentPosition']),
     changeTime: function(){
       this.currentTime = moment.utc().add(this.timezone).format('LTS');
       // this.currentTime = moment().add(this.forecast?.timezone, 'seconds').tz().format('LTS');
     } 
   },
   computed:{
-    ...mapGetters(['forecast', 'city_id', 'weather', 'quote', 'timezone']),
+    ...mapGetters(['forecast', 'city_id', 'weather', 'quote', 'timezone', 'currentUserPosition']),
     cityName: function(){
       return this.forecast.name + (this.forecast? ', ' + this.forecast?.sys?.country : null)
     }
   },
   created(){
+    if(this.askForCurrentPosition())
     this.fetchForecast();
     this.fetchQuote();
     window.setInterval(this.changeTime, 1000);
