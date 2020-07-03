@@ -67,7 +67,7 @@ const mutations = {
             lat: position.coords.latitude, 
             lon: position.coords.longitude
         }
-    }
+    },
 }
 
 export default{

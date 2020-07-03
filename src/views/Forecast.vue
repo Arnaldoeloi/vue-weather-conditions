@@ -21,11 +21,14 @@
             </p>
         </div>  
       </div>
-      <div class="content">
-        <div>
-          {{ weather.main }}
-        </div>
-      </div>
+      <footer class="content d-flex direction-row spc-between">
+          <div class="d-flex align-center justify-center">
+            <h3 class="capitalize-first">{{ weather.main }}</h3>
+          </div>
+          <div>
+            <h3>{{ temperatureCelsius }}°C</h3>
+          </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -53,6 +56,9 @@ export default {
     ...mapGetters(['forecast', 'city_id', 'weather', 'quote', 'timezone', 'currentUserPosition']),
     cityName: function(){
       return this.forecast.name + (this.forecast? ', ' + this.forecast?.sys?.country : null)
+    },
+    temperatureCelsius: function(){
+      return this.forecast?.main?.temp - 273.15;
     }
   },
   created(){
@@ -64,6 +70,10 @@ export default {
 }
 </script>
 <style scoped>
+footer{
+  padding: 10px 50px;
+}
+
 .time-show{
   background-size: cover;
   background-image: url('/images/default.jpg');
