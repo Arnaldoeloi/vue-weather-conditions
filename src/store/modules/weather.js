@@ -3,11 +3,10 @@ import axios from 'axios';
 const state ={
     forecast: {},
     weather: {},
-    // city_id: '3394023',
+    city_id: '3394023',
     quote: 0,
     timezone: '',
     currentUserPosition: null,
-    city_id: '1486209',
 }
 
 const getters ={
