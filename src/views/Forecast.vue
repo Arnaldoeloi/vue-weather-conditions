@@ -45,11 +45,12 @@ export default {
   methods: {
     ...mapActions(['fetchForecast','fetchQuote']),
     changeTime: function(){
-      this.currentTime = moment().format('LTS');
+      this.currentTime = moment.utc().add(this.timezone).format('LTS');
+      // this.currentTime = moment().add(this.forecast?.timezone, 'seconds').tz().format('LTS');
     } 
   },
   computed:{
-    ...mapGetters(['forecast', 'city_id', 'weather', 'quote']),
+    ...mapGetters(['forecast', 'city_id', 'weather', 'quote', 'timezone']),
     cityName: function(){
       return this.forecast.name + (this.forecast? ', ' + this.forecast?.sys?.country : null)
     }

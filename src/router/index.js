@@ -8,7 +8,16 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
-    component: Forecast
+    component: Forecast,
+    meta: {
+      title: 'Weather Conditions',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The home page'
+        }
+      ]
+    }
   },
   {
     path: '/about',
@@ -22,6 +31,11 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
 })
 
 export default router

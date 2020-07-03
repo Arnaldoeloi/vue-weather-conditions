@@ -4,15 +4,17 @@ const state ={
     forecast: {},
     weather: {},
     city_id: '3394023',
-    quote: '',
+    quote: 0,
+    timezone: '',
     // city_id: '4499428',
 }
 
 const getters ={
-    quote: (state)    => state.quote,
-    weather: (state)  => state.weather,
-    forecast: (state) => state.forecast,
-    city_id: (state)  => state.city_id,
+    timezone: (state)  => state.timezone,
+    quote:    (state)  => state.quote,
+    weather:  (state)  => state.weather,
+    forecast: (state)  => state.forecast,
+    city_id:  (state)  => state.city_id,
 }
 
 const actions = {
@@ -35,6 +37,7 @@ const mutations = {
     setForecast: (state, forecast) =>{
          state.forecast = forecast
          state.weather  = forecast.weather[0]
+         state.timezone = forecast?.timezone * 1000
     },
     setQuote: (state, quote) => {
         state.quote = quote;
