@@ -59,22 +59,37 @@ The browser will ask to know your location, agree with it and it'll show you the
 ### Acknowledgement
 
 #### Images
+
 [Dexter Fernandes - Rock Formation Close Up Photography](https://www.pexels.com/photo/rock-formation-close-up-photography-2646237/)
+
 [Pixabay - Dark Cloudy Sky](https://www.pexels.com/pt-br/foto/ceu-escuro-natureza-nublado-158163/)
+
 [Abdallah Maqboul - Photo of Fully Clouds](https://www.pexels.com/photo/photo-of-fully-clouds-1591305/)
+
 [Darius Krause - Brown Concrete Building Interior](https://www.pexels.com/photo/brown-concrete-building-interior-2253934/)
+
 [Veeterzy - Road Landscape Nature Forest](https://www.pexels.com/photo/road-landscape-nature-forest-39811/)
+
 [Benjamin Suter - People Standing on Pavement during Rainy Day](https://www.pexels.com/photo/people-standing-on-pavement-during-rainy-day-3617453/)
+
 [Pixabay - Desert Under Blue Sky](https://www.pexels.com/photo/adventure-arid-barren-coast-210307/)
+
 [W W - Brown Concrete Building](https://www.pexels.com/photo/brown-concrete-building-889832/)
+
 [freestocks.org - Snowy Pathway Surrounded by Bare Tree](https://www.pexels.com/photo/snowy-pathway-surrounded-by-bare-tree-839462/)
+
 [Suparerg Suksai - Close Up Photo of Coconut Tree](https://www.pexels.com/photo/close-up-photo-of-coconut-tree-1030320/)
+
 [Rodrigo Souza - Photo of Thunderstorm](https://www.pexels.com/photo/photo-of-thunderstorm-2531709/)
+
 [Ralph W. lambrecht - Lightning and Tornado hitting Village](https://www.pexels.com/photo/lightning-and-tornado-hitting-village-1446076/)
 
 
+
 #### APIs
+
 [LukePeavey - Quotable API](https://github.com/lukePeavey/quotable)
+
 [Open Weather - API ](https://openweathermap.org/)
 
 
