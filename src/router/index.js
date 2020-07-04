@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Forecast from '../views/Forecast.vue'
+import Weather from '../views/Weather.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
-    component: Forecast,
+    component: Weather,
     meta: {
       title: 'Weather Conditions',
       metaTags: [

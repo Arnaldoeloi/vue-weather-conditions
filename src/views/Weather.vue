@@ -37,7 +37,7 @@
 import moment from 'moment';
 import { mapGetters, mapActions } from 'vuex';
 export default {
-  name: 'Forecast',
+  name: 'Weather',
   data() {
     return {
       currentTime: '00:00:00 AM',
