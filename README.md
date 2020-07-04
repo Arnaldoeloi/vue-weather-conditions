@@ -50,7 +50,7 @@ npm run lint
 
 ### How to use it
 
-Once you installed all dependencies and ran ```npm run serve`` you can go to [localhost:8080/vue-weather-conditions](http://localhost:8080/vue-weather-conditions).
+Once you have installed all the dependencies and ran ```npm run serve```, go to [localhost:8080/vue-weather-conditions](http://localhost:8080/vue-weather-conditions).
 
 The browser will ask to know your location, agree with it and it'll show you the weather on your region right now. The default place, in case you don't agree to share the location (with no one but yourself) it'll show the city where the app was created: Natal, BR.  
 
