@@ -2,9 +2,9 @@
 
 ![alt_text](https://github.com/Arnaldoeloi/vue-weather-conditions/blob/master/app_preview.png?raw=true)
 
-This simple app will show current weather data from your location given the permission to see it. It'll also show you a famous quote to get you inspired.
+This simple app will show you the current weather data from your location given the permission to see it. It'll also show you a famous quote to get you inspired.
 
-You can [check it working live on https://arnaldoeloi.github.io/vue-weather-conditions/](https://arnaldoeloi.github.io/vue-weather-conditions/).
+You can check it working live on [https://arnaldoeloi.github.io/vue-weather-conditions/](https://arnaldoeloi.github.io/vue-weather-conditions/).
 
 
 
