@@ -7,7 +7,7 @@
           <span>{{currentTime}}</span>
         </div>
         <div class="weather-icon">
-          <img v-if="weather.icon" :src="`http://openweathermap.org/img/wn/${weather.icon}@2x.png`"> 
+          <img v-if="weather.icon" :src="`https://openweathermap.org/img/wn/${weather.icon}@2x.png`"> 
         </div>
       </div>
       <div class="content justify-center align-center flex-column">
