@@ -4,31 +4,17 @@ import Weather from '../views/Weather.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
-    path: '/',
+    path: '/*',
     name: 'Home',
     component: Weather,
-    meta: {
-      title: 'Weather Conditions',
-      metaTags: [
-        {
-          name: 'description',
-          content: 'The home page'
-        }
-      ]
-    }
   },
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
   routes
-})
-
-router.beforeEach((to, from, next) => {
-  document.title = to.meta.title
-  next()
 })
 
 export default router
