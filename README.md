@@ -4,7 +4,7 @@
 
 This simple app will show you the current weather data from your location given the permission to see it. It'll also show you a famous quote to get you inspired.
 
-You can check it working live on [https://arnaldosouza.com/vue-weather-conditions/](https://arnaldosouza.com/vue-weather-conditions/).
+You can check it working live on [https://arnaldoeloi.github.io/vue-weather-conditions/](https://arnaldoeloi.github.io/vue-weather-conditions/).
 
 
 
